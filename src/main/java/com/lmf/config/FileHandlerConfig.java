@@ -42,7 +42,7 @@ public class FileHandlerConfig {
 
     @Bean
     @ConditionalOnProperty(prefix = "attachment", name = "type", havingValue = "huaweiobs")
-    public HuaweiObsFileHandler getTencentCosFileHandler(HuaweiObsProperties huaweiObsProperties) {
+    public HuaweiObsFileHandler getHuaweiObsFileHandler(HuaweiObsProperties huaweiObsProperties) {
         return new HuaweiObsFileHandler(huaweiObsProperties);
     }
 
